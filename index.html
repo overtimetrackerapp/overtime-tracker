@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Overtime Tracker Support</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: single readable column, sticky-free header, utilitarian legal/support pages */
+:root{--bg:#f5f7f9;--surface:#ffffff;--fg:#15212b;--muted:#53636f;--line:#d8e0e6;--accent:#0b6b7d;--accent-fg:#ffffff;
+--display:'IBM Plex Mono',ui-monospace,Menlo,monospace;--body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e161d;--surface:#16212a;--fg:#e5ecf1;--muted:#9aabb7;--line:#27353f;--accent:#58c3d6;--accent-fg:#06222a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e161d;--surface:#16212a;--fg:#e5ecf1;--muted:#9aabb7;--line:#27353f;--accent:#58c3d6;--accent-fg:#06222a;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);padding-inline:1rem;padding-block:2rem 4rem}
+.wrap{max-width:42rem;margin-inline:auto;min-width:0}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;font-family:var(--display);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+nav a{color:var(--muted);text-decoration:none}nav a[aria-current]{color:var(--fg);border-bottom:2px solid var(--accent)}
+nav a:hover{color:var(--accent)}
+h1{font:600 2rem/1.15 var(--body);margin:2rem 0 .5rem;text-wrap:balance}
+h2{font:600 1.15rem/1.3 var(--body);margin:2.2rem 0 .5rem;text-wrap:balance}
+p,li{max-width:65ch}ul{padding-left:1.2rem}li{margin:.3rem 0}
+.meta{font-family:var(--display);font-size:.8rem;color:var(--muted);letter-spacing:.04em}
+a{color:var(--accent)}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem;margin:1.5rem 0;display:flex;gap:.75rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.contact b{font-family:var(--display);font-weight:500;font-size:1rem;overflow-wrap:anywhere;user-select:all}
+button{font:500 .85rem var(--body);background:var(--accent);color:var(--accent-fg);border:0;border-radius:4px;padding:.5rem .9rem;cursor:pointer}
+details{border-bottom:1px solid var(--line);padding:.75rem 0}summary{cursor:pointer;font-weight:500}details p{margin:.5rem 0 0;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+</style>
+
+</head><body>
+<div class="wrap">
+<nav><a href="index.html" aria-current="page">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Overtime Tracker Support</h1>
+<p>Overtime Tracker logs overtime shifts for first responders and other hourly workers, groups them by pay period, and shows what you have worked and what you have left under your cap.</p>
+<div class="contact"><div><div class="meta">Email support</div><b id="em">overtimetrackerapp@proton.me</b></div><button id="copy" type="button">Copy address</button></div>
+<p>Send a note with your iPhone model, your iOS version, and what happened. Replies usually come within two business days.</p>
+
+<h2>Common questions</h2>
+<details><summary>Where is my data stored?</summary><p>Only on your iPhone. There is no account and no server. If you delete the app, the entries go with it, so use Export or Backup (Pro) before you do.</p></details>
+<details><summary>How do I get my calendar events to show up as overtime?</summary><p>Turn on calendar sync in Settings and allow calendar access. Any event whose title contains your keyword (the default is "OT") is imported as a shift. You can change the keyword and choose which calendars to read.</p></details>
+<details><summary>What is free and what is Pro?</summary><p>Free: manual entry, calendar sync, pay periods, multipliers, pay-rate inputs, rounding, cap tracking, history, the Siri shortcut, and the home-screen widget. Pro adds the pay estimate and stub check, timecard reminders and rest guard, trends and the year-end summary, the "Can I work it?" check, and CSV/JSON export with backup and restore.</p></details>
+<details><summary>How much does Pro cost, and can I try it?</summary><p>Pro is $0.99 per month or $8.99 per year. The yearly plan starts with a 7-day free trial. Prices may differ by country. Both plans renew automatically until you cancel.</p></details>
+<details><summary>How do I cancel?</summary><p>Open Settings on your iPhone, tap your name, then Subscriptions, choose Overtime Pro, and tap Cancel. Cancel at least 24 hours before the end of the current period. You keep Pro until that period ends.</p></details>
+<details><summary>What happens to my entries if my subscription ends?</summary><p>Nothing is deleted. You keep every entry and all free features. Pro screens lock until you subscribe again.</p></details>
+<details><summary>I subscribed on another device or reinstalled. How do I get Pro back?</summary><p>Open the Pro screen in the app and tap Restore Purchases. Use the same Apple Account you subscribed with.</p></details>
+<details><summary>How do I log overtime with Siri?</summary><p>Say "Log overtime in Overtime Tracker", then tell Siri the length, such as "two and a half hours". Siri reads it back and asks you to confirm. You can also build a shortcut named "Log overtime" in the Shortcuts app for a shorter phrase.</p></details>
+<details><summary>The widget does not appear.</summary><p>Touch and hold the Home Screen, tap the plus button, and search for Overtime Tracker. Widgets refresh about every 30 minutes and whenever you open the app.</p></details>
+<details><summary>Are the pay figures exact?</summary><p>No. Pay estimates, stub checks, and tax summaries are estimates built from the numbers you enter. They are not payroll, tax, or legal advice. Check your official pay stub and talk to a qualified professional for tax questions.</p></details>
+<footer>Overtime Tracker · <span class="meta">overtimetrackerapp@proton.me</span></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click',function(){var b=this,t='overtimetrackerapp@proton.me';
+function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy address'},1500)}
+function fb(){var r=document.createRange();r.selectNodeContents(document.getElementById('em'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}});
+</script>
+
+</body></html>
